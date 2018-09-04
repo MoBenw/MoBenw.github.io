@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Prepare for work]]></title>
+    <title><![CDATA[Prepare for work[暂时稿]]]></title>
     <url>%2F2018%2F09%2F04%2FPrepare-for-work%2F</url>
     <content type="text"><![CDATA[使用软件 vscode phpstudy 下载编辑器 Visual Studio Code 官网下载链接：https://aka.ms/win32-x64-user-stable 服务器 phpstudy 官网下载链接：http://phpstudy.php.cn/phpstudy/PhpStudy20180211.zip 安装略 安装过程简单，一路回车，默认配置，可以修改一下安装路径，然后ok。 注意事项安装完phpstudy 打开后可能会出现 缺少vc库 可自行对应百度下载相应的vc 附件中提供了部分vc库 ps.必须安装32位的运行库 使用双击快捷键打开 emmmm 能打开就差不多了 关于使用 下一节再讲 可以自己摸索摸索 附件Visual Studio Codephpstudy缺少vc9时 x86缺少vc11时 x86缺少vc14时 x86]]></content>
       <categories>

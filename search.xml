@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[宝塔专业版破解方案]]></title>
+    <url>%2F2018%2F09%2F26%2FBT-upgrading%2F</url>
+    <content type="text"><![CDATA[本方法用水大佬提供，献上水大佬的网站https://www.gksec.com/ 破解思路 安装宝塔 将宝塔升级至专业版 修改配置文件 安装方法使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，根据系统执行相应命令开始安装（大约2分钟完成面板安装）： Centos安装脚本 yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_pro.sh &amp;&amp; sh install.shUbuntu/Deepin安装脚本 wget -O install.sh http://download.bt.cn/install/install-ubuntu_pro.sh &amp;&amp; sudo bash install.shDebian安装脚本 wget -O install.sh http://download.bt.cn/install/install-ubuntu_pro.sh &amp;&amp; bash install.shFedora安装脚本 wget -O install.sh http://download.bt.cn/install/install_pro.sh &amp;&amp; bash install.sh 升级方法 使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，执行以下命令，升级专业版不会对网站环境有任何影响。免费版升级专业版脚本 wget -O update.sh http://download.bt.cn/install/update_pro.sh &amp;&amp; bash update.sh pro 修改配置明确目标 进入该目录下/www/server/panel/class/修改这三个文件 commmon.pypanelAuth.pypanelPlugin.py 首先你需要一个神器 MobaXterm_Personal_10.2.exe 使用神器 ssh 登入你的服务器 登入后你就会发现 这个软件居然有目录 进行下一步之前，我们需要将我们的宝塔升级至专业版 升级到专业版后 你会发现你进入宝塔需要支付才能进入 这里不要慌 我们继续看我们的神器 将我们的文件目录调至/www/server/panel/class/ 然后找到我们的需要修改的第一个文件commmon.py拖到桌面上来 源目录下的这两个文件commmon.py commmon.pyc可以删了，然后打开我们拖出来的这个文件 进行修改 修改完了 再放回去 修改内容：注释该行raise web.seeother(&#39;/vpro&#39;);将这个跳转页面注释了 同理操作删除 panelAuth.pyc修改 panelAuth.py 修改内容：添加result= {&#39;status&#39; : True} 同理操作删除 panelPlugin.pyc修改 panelPlugin.py 修改内容：删除了不用的东西为我们的付费页面改个名 修改完成 我们重启一下我们的宝塔service bt restart 修改完成我们欣赏一下我们的修改结果 ps.网站防篡改程序 这个无法使用]]></content>
+      <tags>
+        <tag>安装与配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[PHP - 01 环境配置]]></title>
     <url>%2F2018%2F09%2F04%2FPHP-prepare-for-work%2F</url>
     <content type="text"><![CDATA[使用软件 vscode phpstudy 下载编辑器 Visual Studio Code 官网下载链接：https://aka.ms/win32-x64-user-stable 服务器 phpstudy 官网下载链接：http://phpstudy.php.cn/phpstudy/PhpStudy20180211.zip 安装略 安装过程简单，一路回车，默认配置，可以修改一下安装路径，然后ok。 注意事项安装完phpstudy 打开后可能会出现 缺少vc库 可自行对应百度下载相应的vc 附件中提供了部分vc库 ps.必须安装32位的运行库 使用双击快捷键打开 emmmm 能打开就差不多了 关于使用 下一节再讲 可以自己摸索摸索 不对 应该好好的安排一下的 我们来输出一下 “helloworld” 输出”helloworld”1.首先我们打开我们的phpstudy 2.切换版本至最新版本 (方便之后的框架学习，框架使用到了7.2的新特征) 3.进入你的网站根目录 4.创建一个名为 hello.txt的文本文档，并将其后缀改为.php 5.用vscode打开 hello.php 文件，并编辑下列内容 12345678910&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;body&gt;&lt;?phpecho "Hello World!";?&gt; &lt;/body&gt;&lt;/html&gt; 6.保存编辑后，打开浏览器，在地址栏输入 http://localhost/hello.php 按照这样的步骤 你的 &#39;helloworld&#39; 就出来了 当前部分涉及到 html 具体就……再说 附件Visual Studio Codephpstudy缺少vc9时 x86缺少vc11时 x86缺少vc14时 x86]]></content>
@@ -26,10 +34,10 @@
         <category>Java Web学习</category>
       </categories>
       <tags>
+        <tag>安装与配置</tag>
         <tag>Java</tag>
         <tag>Eclipse</tag>
         <tag>Java EE</tag>
-        <tag>安装与配置</tag>
       </tags>
   </entry>
   <entry>

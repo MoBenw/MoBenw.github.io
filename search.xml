@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[VMware Workstation 14 Pro 的安装及使用]]></title>
     <url>%2F2018%2F10%2F08%2FInstallation-and-use-of-VMware-Workstation-14%2F</url>
-    <content type="text"><![CDATA[既然前人们都造了轮子，而且轮子还很好用，那么我就直接借鉴整合下需要的。 VMware Workstation 14 Pro这是 VMware 14 pro 的下载链接: 访问密码: z07v 这是 VMware 14 pro 的安装教程链接 Ubuntu这是 Ubuntu 18.04.1 LTS 的下载链接 这是 Ubuntu 的安装教程链接 这是 Ubuntu 的安装教程 （包含了VMware Tools的安装）链接 rhel这是 rhel 7.2 镜像文件的下载链接访问密码: mz60 这是 rhel 7.2 的安装教程 （略微简单）链接 这是 rhel 7.2 的安装教程 （略微详细）链接 这是rhel的Vmware Tools 的安装教程链接]]></content>
+    <content type="text"><![CDATA[既然前人们都造了轮子，而且轮子还很好用，那么我就直接借鉴整合下需要的。 VMware Workstation 14 Pro这是 VMware 14 pro 的下载链接访问密码: z07v 这是 VMware 14 pro 的安装教程链接 Ubuntu这是 Ubuntu 18.04.1 LTS 的下载链接 这是 Ubuntu 的安装教程链接 这是 Ubuntu 的安装教程 （包含了VMware Tools的安装）链接 rhel这是 rhel 7.2 镜像文件的下载链接访问密码: mz60 这是 rhel 7.2 的安装教程 （略微简单）链接 这是 rhel 7.2 的安装教程 （略微详细）链接 这是rhel的Vmware Tools 的安装教程链接 对于大部分电脑来说 完成这些步骤基本上就可以运行了 部分电脑可能会出现点问题 比如虚拟化等等 这里提供一个好用的东西 常见问题都能解决的 连接]]></content>
   </entry>
   <entry>
     <title><![CDATA[宝塔专业版破解方案]]></title>

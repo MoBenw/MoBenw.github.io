@@ -4,11 +4,20 @@
     <title><![CDATA[VMware Workstation 14 Pro 的安装及使用]]></title>
     <url>%2F2018%2F10%2F08%2FInstallation-and-use-of-VMware-Workstation-14%2F</url>
     <content type="text"><![CDATA[既然前人们都造了轮子，而且轮子还很好用，那么我就直接借鉴整合下需要的。 VMware Workstation 14 Pro这是 VMware 14 pro 的下载链接访问密码: z07v 这是 VMware 14 pro 的安装教程链接 Ubuntu这是 Ubuntu 18.04.1 LTS 的下载链接 这是 Ubuntu 的安装教程链接 这是 Ubuntu 的安装教程 （包含了VMware Tools的安装）链接 rhel这是 rhel 7.2 镜像文件的下载链接访问密码: mz60 这是 rhel 7.2 的安装教程 （略微简单）链接 这是 rhel 7.2 的安装教程 （略微详细）链接 这是rhel的Vmware Tools 的安装教程链接 对于大部分电脑来说 完成这些步骤基本上就可以运行了 部分电脑可能会出现点问题 比如虚拟化等等 这里提供一个好用的东西 常见问题都能解决的 连接]]></content>
+      <categories>
+        <category>安装新东西</category>
+      </categories>
+      <tags>
+        <tag>安装与配置</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[宝塔专业版破解方案]]></title>
     <url>%2F2018%2F09%2F26%2FBT-upgrading%2F</url>
     <content type="text"><![CDATA[本方法用水大佬提供，献上水大佬的网站 https://www.gksec.com/ 破解思路 安装宝塔 将宝塔升级至专业版 修改配置文件 安装方法使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，根据系统执行相应命令开始安装（大约2分钟完成面板安装）： Centos安装脚本 yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_pro.sh &amp;&amp; sh install.shUbuntu/Deepin安装脚本 wget -O install.sh http://download.bt.cn/install/install-ubuntu_pro.sh &amp;&amp; sudo bash install.shDebian安装脚本 wget -O install.sh http://download.bt.cn/install/install-ubuntu_pro.sh &amp;&amp; bash install.shFedora安装脚本 wget -O install.sh http://download.bt.cn/install/install_pro.sh &amp;&amp; bash install.sh 升级方法 使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，执行以下命令，升级专业版不会对网站环境有任何影响。免费版升级专业版脚本 wget -O update.sh http://download.bt.cn/install/update_pro.sh &amp;&amp; bash update.sh pro 修改配置明确目标 进入该目录下/www/server/panel/class/修改这三个文件 commmon.pypanelAuth.pypanelPlugin.py 首先你需要一个神器 MobaXterm_Personal_10.2.exe 使用神器 ssh 登入你的服务器 登入后你就会发现 这个软件居然有目录 进行下一步之前，我们需要将我们的宝塔升级至专业版 升级到专业版后 你会发现你进入宝塔需要支付才能进入 这里不要慌 我们继续看我们的神器 将我们的文件目录调至/www/server/panel/class/ 然后找到我们的需要修改的第一个文件commmon.py拖到桌面上来 源目录下的这两个文件commmon.py commmon.pyc可以删了，然后打开我们拖出来的这个文件 进行修改 修改完了 再放回去 修改内容：注释该行raise web.seeother(&#39;/vpro&#39;);将这个跳转页面注释了 同理操作删除 panelAuth.pyc修改 panelAuth.py 修改内容：添加result= {&#39;status&#39; : True} 同理操作删除 panelPlugin.pyc修改 panelPlugin.py 修改内容：删除了不用的东西为我们的付费页面改个名 修改完成 我们重启一下我们的宝塔service bt restart 修改完成我们欣赏一下我们的修改结果 ps.网站防篡改程序 这个无法使用]]></content>
+      <categories>
+        <category>安装新东西</category>
+      </categories>
       <tags>
         <tag>安装与配置</tag>
       </tags>
@@ -95,6 +104,9 @@
     <title><![CDATA[或许你的手机上需要一个linux]]></title>
     <url>%2F2018%2F08%2F09%2FMaybe-your-mobile-phone-might-need-a-Linux%2F</url>
     <content type="text"><![CDATA[Termux 高级终端安装使用配置教程请看大佬文章！写的很好！我需要做的就是看和推广http://www.sqlsec.com/2018/05/termux.html#more]]></content>
+      <categories>
+        <category>安装新东西</category>
+      </categories>
       <tags>
         <tag>安装与配置</tag>
         <tag>小配件</tag>

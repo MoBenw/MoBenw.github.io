@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PHP - 02 基本语法]]></title>
+    <url>%2F2018%2F11%2F01%2FPHP-basic-grammar%2F</url>
+    <content type="text"><![CDATA[回复一下上次碰到的问题： 为什么输出I LOVE ATD的时候中间没有空格，原因是没仔细看，其实还有 为什么在echo &#39;I LOVE ATD&#39;; 可以选择不打空格，原因是因为只有一个表达式时可以不打分号 有关站点配置，创建的站点无法使用设置好的域名访问，原因是你的host文件未进行修改 PHP有什么用，在无html的基础下，php将无法展现出语言的特性，php主要是面向服务器的，与服务器进行交互，将数据由前端传编辑修改发送到数据库 服务器是什么，这个就像高中时候力、摩尔一样，你学着学着就明白了，当然，也可以查看百度。简单来说，一台电脑是一台服务器 开始于结束标记php 有四种开始结束标记 ，这里不讲，仅做了解 在一个 PHP 代码段中的最后一行可以不用分号结束我们一般使用的是第一种形式 注释注释 // /* */ # 变量在php中变量的表示为美元符号$ 加上你的变量名例如1234567&lt;?php$a = 'i';$b = 'love';$c = 'ATD';echo "$a $b $c"; // 输出 "i love atd"?&gt; 数据类型 Boolean 布尔类型 Integer 整型 Float 浮点型 String 字符串 Array 数组 Object 对象 NULL 输出语句在 PHP 中有两个基本的输出方式： echo 和 print区别: echo - 可以输出一个或多个字符串 print - 只允许输出一个字符串，返回值总为 1 常量设置常量的函数 define()的函数语法：bool define ( string $name , mixed $value [, bool $case_insensitive = false ] ) name：必选参数，常量名称，即标志符。 value：必选参数，常量的值。 case_insensitive ：可选参数，如果设置为 TRUE，该常量则大小写不敏感。默认是大小写敏感的。 1234&lt;?phpdefine("TEST", "ATD family",FALSE);echo TEST; // 输出 "ATD family"?&gt; 基本运算 PHP7+ 版本新增整除运算符 intdiv() 判断语句if 、if..else..、if..elseif..、switch...case.. 123if (condition) &#123; # code...&#125; 123456if (condition) &#123; # code...&#125; else &#123; # code...&#125; 12345if (condition) &#123; # code...&#125; elseif (condition) &#123; # code...&#125; 123456789switch ($variable) &#123; case 'value': # code... break; default: # code... break;&#125; 循环语句for、while、do..while123for ($i=0; $i &lt; ; $i++) &#123; # code...&#125; 123while ($a &lt;= 10) &#123; # code...&#125; 123do &#123; # code...&#125; while ($a &lt;= 10);]]></content>
+      <categories>
+        <category>PHP学习</category>
+      </categories>
+      <tags>
+        <tag>安装与配置</tag>
+        <tag>PHP</tag>
+        <tag>basic</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[转移Hexo搭建的博客到自己的阿里云服务器]]></title>
     <url>%2F2018%2F10%2F20%2FBlog-transfer-Hexo-built-blog-to-own-server%2F</url>
     <content type="text"><![CDATA[上一篇文章介绍了如何配置Hexo，但是在使用的时候发现Github的速度并不能让人满意，于是开始转战我的阿里云 创建一个 git 用户 专门运行 git 服务1$ sudo adduser git 为了安全 ssh 连接配对1$ ssh-keygen 创建公钥私钥对1$ ssh-copy-id -i .ssh/id_rsa.pub 用户名字@192.168.x.xxx 将公钥复制到远程机器中 我的ssh好像翻车了 但是问题不大 手动输入密码这里的作用就是方便连接 ssh-keygen 产生公钥与私钥对.ssh-copy-id 将本机的公钥复制到远程机器的创建证书登录，把自己电脑的公钥，也就是 ~/.ssh/id_rsa.pub 文件里的内容添加到服务器的 /home/git/.ssh/authorized_keys 文件中，添加公钥之后可以防止每次 push 都输入密码。 在服务器上弄个 Git 仓库123$ mkdir hexo.git$ cd hexo.git$ git init --bare 使用 –bare 参数，Git 就会创建一个裸仓库，为共享而存在 编写脚本1`$ cd /home/git/hexo.git/hooks` 1`$ vim post-receive` 12#!/bin/shgit --work-tree=/www/wwwroot/www.mobenw.cn --git-dir=/home/git/hexo.git checkout -f /www/wwwroot/www.mobenw.cn 网站目录/home/git/hexo.git 仓库 以上操作实现了自动部署的功能 提权12$ chmod +x post-receive为这个文件提权 1$ sudo chown -R git:git hexo.git 使hexo.blog该目录的拥有者为 git $ chmod 777 -R /www/wwwroot/www.mobenw.cn至少这里有写的权限 本地配置本地hexo目录下的_config.yml1234deploy: type: git repo: aliyun: git@192.168.x.xxx:/home/git/hexo.git 收工接下来就是正常的 hexo 的操作…]]></content>

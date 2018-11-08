@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PHP - 03 进阶语法]]></title>
+    <url>%2F2018%2F11%2F08%2FPHP-advanced-grammar%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[PHP - 02 基本语法]]></title>
     <url>%2F2018%2F11%2F01%2FPHP-basic-grammar%2F</url>
     <content type="text"><![CDATA[回复一下上次碰到的问题： 为什么输出I LOVE ATD的时候中间没有空格，原因是没仔细看，其实还有 为什么在echo &#39;I LOVE ATD&#39;; 可以选择不打空格，原因是因为只有一个表达式时可以不打分号 有关站点配置，创建的站点无法使用设置好的域名访问，原因是你的host文件未进行修改 PHP有什么用，在无html的基础下，php将无法展现出语言的特性，php主要是面向服务器的，与服务器进行交互，将数据由前端传编辑修改发送到数据库 服务器是什么，这个就像高中时候力、摩尔一样，你学着学着就明白了，当然，也可以查看百度。简单来说，一台电脑是一台服务器 开始于结束标记php 有四种开始结束标记 ，这里不讲，仅做了解 在一个 PHP 代码段中的最后一行可以不用分号结束我们一般使用的是第一种形式 注释注释 // /* */ # 变量在php中变量的表示为美元符号$ 加上你的变量名例如1234567&lt;?php$a = 'i';$b = 'love';$c = 'ATD';echo "$a $b $c"; // 输出 "i love atd"?&gt; 数据类型 Boolean 布尔类型 Integer 整型 Float 浮点型 String 字符串 Array 数组 Object 对象 NULL 输出语句在 PHP 中有两个基本的输出方式： echo 和 print区别: echo - 可以输出一个或多个字符串 print - 只允许输出一个字符串，返回值总为 1 常量设置常量的函数 define()的函数语法：bool define ( string $name , mixed $value [, bool $case_insensitive = false ] ) name：必选参数，常量名称，即标志符。 value：必选参数，常量的值。 case_insensitive ：可选参数，如果设置为 TRUE，该常量则大小写不敏感。默认是大小写敏感的。 1234&lt;?phpdefine("TEST", "ATD family",FALSE);echo TEST; // 输出 "ATD family"?&gt; 基本运算 PHP7+ 版本新增整除运算符 intdiv() 判断语句if 、if..else..、if..elseif..、switch...case.. 123if (condition) &#123; # code...&#125; 123456if (condition) &#123; # code...&#125; else &#123; # code...&#125; 12345if (condition) &#123; # code...&#125; elseif (condition) &#123; # code...&#125; 123456789switch ($variable) &#123; case 'value': # code... break; default: # code... break;&#125; 循环语句for、while、do..while123for ($i=0; $i &lt; ; $i++) &#123; # code...&#125; 123while ($a &lt;= 10) &#123; # code...&#125; 123do &#123; # code...&#125; while ($a &lt;= 10);]]></content>

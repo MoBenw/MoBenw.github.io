@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PHP - 06 简易表白墙]]></title>
+    <url>%2F2018%2F11%2F14%2FPHP-simple-confession-wall%2F</url>
+    <content type="text"><![CDATA[这次，我们直接从一个小应用开始 函数解释require_once() require_once()语句在脚本执行期间包含并运行指定文件(通俗一点，括号内的文件会执行一遍)。此行为和require()语句类似，唯一区别是如果该文件中的代码已经被包含了，则不会再次包含。 count() 计算数组中的单元数目，或对象中的属性个数 array_key_exists() 检查数组里是否有指定的键名或索引 file_exists() 检查文件或目录是否存在 json_decode() 对 JSON 格式的字符串进行解码 json_last_error() 返回最后发生的错误 JSON_ERROR_NONE 常量—没有错误发生 trim() 去除字符串首尾处的空白字符（或者其他字符） time() 返回当前的 Unix 时间戳 date() 格式化一个本地时间／日期 json_encode() 对变量进行 JSON 编码 逻辑前端进行输入 php进行判断 如果输入成功则显示写入成功，如果写入是数据不完整 否则写入失败 表白墙历史采用的是一个迭代手段 使用for循环迭代将后端传输过来的数据进行list read()函数将文件中的数据解码读取出来并以数组的形式保存 write()函数将数据编码加密写入到文件中 源码下载链接]]></content>
+      <categories>
+        <category>PHP学习</category>
+      </categories>
+      <tags>
+        <tag>安装与配置</tag>
+        <tag>PHP</tag>
+        <tag>basic</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[PHP - 05 表单]]></title>
     <url>%2F2018%2F11%2F14%2FPHP-form%2F</url>
     <content type="text"><![CDATA[我们简单的来讲讲表单 全局变量 $GLOBALS $_SERVER $_REQUEST $_POST $_GET $_FILES $_ENV $_COOKIE $_SESSION $_SERVER$_SERVER 是一个包含了诸如头信息(header)、路径(path)、以及脚本位置(script locations)等等信息的数组。 $_POST预定义的 $_GET 变量用于收集来自 method=”post” 的表单中的值。 $_GET预定义的 $_GET 变量用于收集来自 method=”get” 的表单中的值。 $_REQUEST预定义的 $_REQUEST 变量可用来收集通过 GET 和 POST 方法发送的表单数据。 表单输入框输入123456789101112131415161718&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;表单&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;form method="post"&gt;名字: &lt;input type="text" name="name"&gt;年龄: &lt;input type="text" name="age"&gt;&lt;input type="submit" value="提交"&gt;&lt;/form&gt; &lt;/body&gt;&lt;/html&gt;&lt;?php if (isset($_POST["name"])) echo '欢迎'.$_POST["name"].'!'; ?&gt;&lt;br&gt;&lt;?php if (isset($_POST["age"])) echo '你的年龄是'.$_POST["age"].'岁。'; ?&gt; 简单的表单处理就是这样你获取到了数据接下来可以进行判断，进行增删改查等操作]]></content>

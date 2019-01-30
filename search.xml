@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[How to use teamviewer]]></title>
+    <title><![CDATA[How to use navicat]]></title>
+    <url>%2F2019%2F01%2F30%2FHow-to-use-navicat%2F</url>
+    <content type="text"><![CDATA[安装操作软件见 附件 安装过程一路默认就好 汉化附件]]></content>
+      <categories>
+        <category>安装新东西</category>
+      </categories>
+      <tags>
+        <tag>安装与配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何无限期的使用远程桌面Teamviewer]]></title>
     <url>%2F2019%2F01%2F13%2FHow-to-use-teamviewer%2F</url>
     <content type="text"><![CDATA[安装操作软件见 附件 安装过程一路默认就好 汉化自带汉化 需要需要在设置中选择 其他 -&gt; 选项 -&gt; 高级 -&gt; 显示高级选项 -&gt; 显示语言 -&gt; 选择中文简体 附件teamviewer]]></content>
       <categories>
@@ -31,6 +42,7 @@
         <category>pojie</category>
       </categories>
       <tags>
+        <tag>安装与配置</tag>
         <tag>pojie</tag>
         <tag>小配件</tag>
       </tags>
@@ -43,7 +55,6 @@
         <category>PHP学习</category>
       </categories>
       <tags>
-        <tag>安装与配置</tag>
         <tag>PHP</tag>
         <tag>basic</tag>
       </tags>
@@ -56,7 +67,6 @@
         <category>PHP学习</category>
       </categories>
       <tags>
-        <tag>安装与配置</tag>
         <tag>PHP</tag>
         <tag>basic</tag>
       </tags>
@@ -69,7 +79,6 @@
         <category>PHP学习</category>
       </categories>
       <tags>
-        <tag>安装与配置</tag>
         <tag>PHP</tag>
         <tag>basic</tag>
       </tags>
@@ -82,7 +91,6 @@
         <category>PHP学习</category>
       </categories>
       <tags>
-        <tag>安装与配置</tag>
         <tag>PHP</tag>
         <tag>basic</tag>
       </tags>
@@ -95,7 +103,6 @@
         <category>PHP学习</category>
       </categories>
       <tags>
-        <tag>安装与配置</tag>
         <tag>PHP</tag>
         <tag>basic</tag>
       </tags>

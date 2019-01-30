@@ -153,6 +153,7 @@
     <content type="text"><![CDATA[开了虚拟机 弄了下基本的安装 在下还是萌新 解释可能没有太详细 配置必备 JDKEclipseTomcat 安装简介jdk 一路next 直接默认的没问题eclipse 选择java_ee 选择路径 okTomcat 无太大操作空间 可以直接一路默认 Eclipse安装图解真的默认 无 Eclipse安装图解 Tomcat安装图解 配置配置TomcatWindow –&gt; Preferences –&gt; Server –&gt; Runtime Environment –&gt; Add Add你的Tomcat 选择你的版本 我的版本是v9.0 Next 选择你的安装路径 选择jdk版本 一般情况下 这个是系统默认的 这里为了一些后续方便 Workbench default JRE Add你的jdk 我的jdk版本是v9.0.1 选择你的安装路径 ok 搞定 部署新建项目File –&gt; New –&gt; Other –&gt; web –&gt;Dynamic Web Project 设置项目名 这里可以不用管 这个时候我们需要看到我们的server 部署server 将之前创建的Test项目add到 server 启动 server可以右键 也可以直接点击这个绿色启动键 设置主界面indexTest –&gt; Webcontent (之前自己设置的，这是默认的) –&gt; index.jsp 123456789101112&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;&lt;html&gt;&lt;head&gt;&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;title&gt;在此处插入标题&lt;/title&gt;&lt;/head&gt;&lt;body&gt;helloworld&lt;/body&gt;&lt;/html&gt; Ctrl+F11 ok 打开了内置的浏览器 运行成功或者手动打开浏览器http://localhost:8080/Test/ Others这里也可以修改path设置成Tomcat的目录 (了解一下) 原 改 附件Tomact 32-bit/64-bit Windows Service Installer]]></content>
       <categories>
         <category>Java Web学习</category>
+        <category>安装新东西</category>
       </categories>
       <tags>
         <tag>安装与配置</tag>
@@ -242,6 +243,7 @@
     <content type="text"><![CDATA[我这里选用的是GitHub.io以及Hexo来搭建自己的博客的 配置必备 gitnode.js git的安装 Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持 无需多讲，一路默认 node.js的安装 简单的说 Node.js 就是运行在服务端的 JavaScript。Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。 操作空间不大，一路默认 正式开始安装 Hexo进入命令行 输入命令 npm install -g hexo 顺便把这个也安装一下 自动部署发布工具 npm install hexo-deployer-git --save 初始化 Hexo选择你博客存放的位置 (建议创建一个新的文件夹_初始化需要一个空的文件夹)然后命令行输入命令 hexo init git主题本身自带主题 可以暂时跳过该操作 若需要更换主题时再进行操作 此处以我使用的主题为例进入你的 themes目录 命令行输入命令 git clone https://github.com/iissnan/hexo-theme-next.git 主题下载后需要进行以下操作才能更换根目录下的 _config.yml修改 xxxxx为你的主题名 ps.注意有空格themes: XXXXX 本地浏览博客命令行输入命令 12hexo ghexo s hexo g 生成hexo s 启动服务预览 在浏览器输入：localhost:4000 就可以进行访问Ctrl+C 即可退出 写文章根目录下命令行 输入命令1hexo new &apos;文章名字&apos; 在source目下的 _posts目录下 会出现 .md文件以下为一般完整内容 1234567title: postName #文章页面上的显示名称，一般是中文date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改categories: 默认分类 #分类tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面---以下文章是正文 上传到GitHub上 首先你得有GitHub账号然后你创建了一个仓库为 用户名.gitHub.iossh密钥自己配好 根目录下 _config.yml文件内把你的git写进去 现在写的是我的 替换一下就ok了 123deploy: type: git repo: git@github.com:MoBenw/MoBenw.github.io.git 满足以上条件命令行 输入命令 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d hexo clean 清理缓存hexo g 生成hexo d 部署 使用你的GitHub.io访问到这里你就基本上会基本的GitHub上Hexo的博客搭建了 (感觉语句不通 不管了) 有关于README.md 在 source目录下 创建一个 README.md 文件 里面是你要写的内容进入根目录 打开配置文件 _config.yml修改 跳过渲染内容skip_render: README.md]]></content>
       <categories>
         <category>Hexo博客搭建</category>
+        <category>安装新东西</category>
       </categories>
       <tags>
         <tag>安装与配置</tag>
